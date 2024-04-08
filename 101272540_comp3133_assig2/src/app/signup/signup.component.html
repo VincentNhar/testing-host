@@ -1,0 +1,38 @@
+<div class="container">
+    <h1>Sign Up</h1>
+    <div class="form-container">
+        <form class="" [formGroup]="signupForm">
+            <div class="input-container">
+                <div>
+                    <label for="email">Email:</label>
+                </div>
+                <div>
+                    <input type="text" formControlName="email" 
+                    id="email" placeholder="Email Address">
+                </div>
+                <div class="validation-message">
+                    <span *ngIf="signupForm.controls['email'].errors?.['required']">Email is required</span>
+                    <span *ngIf="signupForm.controls['email'].errors?.['email']">Email is invalid</span>
+                </div>
+            </div>
+            <div class="input-container">
+                <div>
+                    <label for="password">Password:</label>
+                </div>
+                <div>
+                    <input type="password" formControlName="password"
+                     id="password" placeholder="Password">
+                </div>
+                <div class="validation-message">
+                    <span *ngIf="signupForm.controls['password'].errors?.['required']">Password is required</span>
+                </div>
+            </div>
+            <div class="input-container">
+                <button class="blue-button button-24"type="submit" [disabled]="signupForm.invalid" (click)="register()">Sign Up</button>
+            </div>
+            <div class="msg-container">
+                <p>Already have an account? <a href="login">Click here</a> to log in.</p>
+            </div>
+        </form>
+    </div>
+</div>

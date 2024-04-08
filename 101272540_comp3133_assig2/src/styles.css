@@ -1,0 +1,123 @@
+/* You can add global styles to this file, and also import other style files */
+h1{
+    text-align: center;
+}
+
+button{
+    padding: 10px;
+    border: none;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #d6d6d6;
+    padding: 8px;
+    text-align: left;
+}
+
+.validation-message{
+    color:red
+}
+
+/* BUTTONS */
+
+.blue-button{
+    background: #4274ff;
+    border: 1px solid #4274ff;
+}
+
+.blue-button{
+    background: #4274ff;
+    border: 1px solid #4274ff;
+}
+
+.red-button{
+    background: #FF4742;
+    border: 1px solid #FF4742;
+}
+
+.lightblue-button{
+    background: #0099ff;
+    border: 1px solid #0099ff
+}
+
+.button-24 {
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.button-24:hover,
+.button-24:active {
+  background-color: initial;
+  background-position: 0 0;
+  
+}
+
+.blue-button:hover,
+.blue-button:active{
+    color: #4274ff;
+}
+
+.red-button:hover,
+.red-button:active{
+    color: #FF4742;
+}
+
+.lightblue-button:hover,
+.lightblue-button:active{
+    color: #0099ff
+}
+
+.button-24:active {
+  opacity: .5;
+}
+
+/*FORM*/
+
+.container{
+    border: 1px black solid;
+    width: 500px;
+    margin: 2% auto 0px;
+    padding: 20px;
+}
+
+.input-container{
+    margin: 10px;
+    font-size: 150%;
+}
+
+.input-container:last-child button{
+    margin: 0px 10px 00px 0px;
+}
+
+input{
+    height: 25px;
+    width: 460px;
+    padding: 10px;
+    font-size: 100%;
+}
+
+.msg-container p{
+    font-size: 125%;
+}

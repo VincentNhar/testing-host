@@ -1,0 +1,30 @@
+nav{
+    margin: -10px;
+    top: 0px;
+    display: flex;
+    background-color: #000000;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    padding-left: 1rem;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    line-height: 35px;
+    font-size: 150%;
+    margin-right: 20px;
+}
+
+h2{
+    color:#ffffff;
+    margin-left: 20px;
+}

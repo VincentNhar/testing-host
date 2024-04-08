@@ -1,0 +1,30 @@
+table{
+    font-size: 150%;
+}
+
+.odd-row {
+    background-color: #f1f1f1;
+}
+.even-row {
+    background-color: #ffffff;
+}
+
+th{
+    min-width: 200px;
+}
+
+.button-container button{
+    margin: 3px;
+}
+
+.add-btn-container{
+    display: flex;
+    justify-content: center;
+    margin-right: 795px;
+    margin-bottom: 10px;
+}
+
+.list-container{
+    display: flex;
+    justify-content: center;
+}

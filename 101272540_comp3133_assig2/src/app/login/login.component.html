@@ -1,0 +1,37 @@
+<div class="container">
+    <h1>Log In</h1>
+    <div class="form-container">
+        <form class="" [formGroup]="loginForm">
+            <div class="input-container">
+                <div>
+                    <label for="username">Username:</label>
+                </div>
+                <div>
+                    <input type="text" formControlName="username" 
+                    id="username" placeholder="Username">
+                </div>
+                <div class="validation-message">
+                    <span *ngIf="loginForm.controls['username'].errors?.['required']">Username is required</span>
+                </div>
+            </div>
+            <div class="input-container">
+                <div>
+                    <label for="password">Password:</label>
+                </div>
+                <div>
+                    <input type="password" formControlName="password"
+                     id="password" placeholder="Password">
+                </div>
+                <div class="validation-message">
+                    <span *ngIf="loginForm.controls['password'].errors?.['required']">Password is required</span>
+                </div>
+            </div>
+            <div class="input-container">
+                <button class="blue-button button-24"type="submit" [disabled]="loginForm.invalid" (click)="verifyLogin()">Log In</button>
+            </div>
+            <div class="msg-container">
+                <p>Are you new here? <a href="signup">Click here</a> to create an account.</p>
+            </div>
+        </form>
+    </div>
+</div>

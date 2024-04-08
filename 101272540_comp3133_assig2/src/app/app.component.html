@@ -1,0 +1,11 @@
+@if (isLoggedIn){
+    <nav>
+        <h2>{{title}}</h2>
+        <ul>
+            <li><a href="" (click)="handleLogout()">Logout</a></li>
+        </ul>
+    </nav>
+}
+
+
+<router-outlet />

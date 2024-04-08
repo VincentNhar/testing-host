@@ -1,0 +1,48 @@
+<div class="container">
+    <h1>{{ title }} Employee</h1>
+    <div class="form-container">
+        <form class="" [formGroup]="empForm">
+            <div class="input-container">
+                <div>
+                    <label for="firstname">First Name:</label>
+                </div>
+                <div>
+                    <input type="text" formControlName="firstname" 
+                    id="firstname" placeholder="First Name">
+                </div>
+                <div class="validation-message">
+                    <span *ngIf="empForm.controls['firstname'].errors?.['required']">First name is required</span>
+                </div>
+            </div>
+            <div class="input-container">
+                <div>
+                    <label for="lastname">Last Name:</label>
+                </div>
+                <div>
+                    <input type="text" formControlName="lastname"
+                     id="lastname" placeholder="Last Name">
+                </div>
+                <div class="validation-message">
+                    <span *ngIf="empForm.controls['lastname'].errors?.['required']">Last name is required</span>
+                </div>
+            </div>
+            <div class="input-container">
+                <div>
+                    <label for="email">Email:</label>
+                </div>
+                <div>
+                    <input type="email" formControlName="email"
+                    id="email" placeholder="Email Address">                
+                </div>
+                <div class="validation-message">
+                    <span *ngIf="empForm.controls['email'].errors?.['required']">Email is required</span>
+                    <span *ngIf="empForm.controls['email'].errors?.['email']">Invalid Email</span>
+                </div>
+            </div>
+            <div class="input-container">
+                <button class="blue-button button-24"type="submit" [disabled]="empForm.invalid" (click)="onSubmit()">Save</button>
+                <button class="red-button button-24"type="button" (click)="navigateToList()">Cancel</button>
+            </div>
+        </form>
+    </div>
+</div>

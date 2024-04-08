@@ -1,0 +1,38 @@
+.detail-container{
+    position: relative;
+    border: solid black 1px;
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.data-container{
+    display:flex;
+    margin: 0px 10px;
+    ;
+}
+
+.data-title{
+    flex: 1;
+    text-wrap: nowrap;
+    font-weight: bolder;
+    font-size: 150%
+}
+
+.data-value{
+    flex: 1;
+    text-align: left;
+    font-size: 170%
+}
+
+.back-btn{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+}
+
+.back-btn img{
+    width:25px;
+    height:25px;
+}

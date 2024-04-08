@@ -1,0 +1,35 @@
+<h1>{{title}}</h1>
+
+
+<div class="add-btn-container">
+    <button class="blue-button button-24" (click)='addEmployee("add")'>Add Employee</button>
+</div>
+<div class="list-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @for (employee of employees; track employee.id; let idx = $index){
+                <tr [class]="getRowBg(idx)">
+                    <td>{{employee.first_name}}</td>
+                    <td>{{employee.last_name}}</td>
+                    <td>{{employee.email}}</td>
+                    <td class="button-container">
+                        <button class="blue-button button-24"
+                                (click)="addEmployee(employee.id)">Update</button>
+                        <button class="red-button button-24"
+                                (click)="deleteEmployee(employee.id)">Delete</button>
+                        <button class="lightblue-button button-24"
+                                (click)="viewEmployee(employee.id)">View</button>
+                    </td>
+                </tr>
+                }   
+            </tbody>
+        </table>
+</div>
